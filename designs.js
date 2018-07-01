@@ -18,9 +18,15 @@ function makeGrid() {
         const row = canvas.insertRow(r);
         for (let c=0; c<width.value; c++){
             const cell = row.insertCell(c);
-            cell.addEventListener("click", fillSquare);
+
+            cell.addEventListener("mousedown",fillSquare);
+            
         }
     }
+}
+function check_down(){
+    
+    //cell.addEventListener("mousedown", fillSquare);
 }
 
 function clearGrid(){
@@ -31,6 +37,7 @@ function clearGrid(){
 }
 
 function fillSquare () {
-    this.setAttribute("style", `background-color: ${color.value}`);
+    alert("hello world");
+        this.setAttribute("style", `background-color: ${color.value}`); 
 }
 
