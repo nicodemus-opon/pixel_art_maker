@@ -37,7 +37,7 @@ function clearGrid(){
 }
 
 function fillSquare () {
-    alert("hello world");
+    
         this.setAttribute("style", `background-color: ${color.value}`); 
 }
 
