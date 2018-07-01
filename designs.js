@@ -1,9 +1,4 @@
-// Select color input
-// Select size input
 
-// When size is submitted by the user, call makeGrid()
-/* jshint esnext: true */
-/* global document */
 let canvas = document.getElementById("pixel_canvas");
 let height = document.getElementById("input_height");
 let width = document.getElementById("input_width");
@@ -29,14 +24,11 @@ function makeGrid() {
 }
 
 function clearGrid(){
+
     while (canvas.firstChild){
          canvas.removeChild(canvas.firstChild);
     }
 }
-// alternative code:
-// while (table.rows.length > 0) {
-//  table.deleteRow(0);
-// }
 
 function fillSquare () {
     this.setAttribute("style", `background-color: ${color.value}`);
